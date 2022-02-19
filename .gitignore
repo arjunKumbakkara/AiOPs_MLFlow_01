@@ -134,3 +134,6 @@ env/
 
 #mlruns
 mlruns/
+
+#Tem
+temp/

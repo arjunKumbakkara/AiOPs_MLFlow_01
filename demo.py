@@ -17,6 +17,7 @@ def main(p1,p2):
         
         metric = evaluate(param1=p1,param2=p2)
         mlflow.log_metric("some_metric", metric)
+        
         os.makedirs("temp", exist_ok=True)
         with open("temp/sample.txt","w") as f:
             f.write(time.asctime())
