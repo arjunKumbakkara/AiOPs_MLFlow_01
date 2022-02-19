@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+#Ignoring env folder
+env/
+
+#mlruns
+mlruns/
