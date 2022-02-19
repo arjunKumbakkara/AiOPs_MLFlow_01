@@ -17,7 +17,7 @@ def main(p1,p2):
         
         metric = evaluate(param1=p1,param2=p2)
         mlflow.log_metric("some_metric", metric)
-        
+
         os.makedirs("temp", exist_ok=True)
         with open("temp/sample.txt","w") as f:
             f.write(time.asctime())
@@ -25,7 +25,7 @@ def main(p1,p2):
 
         
 
-if __name__ == '__main__' :
+if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--param1","-p1", type=int, default=2) 
     args.add_argument("--param2","-p2", type=int, default=5) 
